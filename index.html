@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper">
+        <div id="box">
+          <div class="countDown">
+            <span id="count">
+              
+            </span>
+          </div>
+        </div>
+        <h2 id="mainHeading">Session 1</h2>
+      </div>
+      <div class="lower">
+        <div class="session">
+          <div class="sessTime">
+            <h4>session time</h4>
+            <div id="sess">0 min</div>
+            <div class="buttons">
+              <input type="button" id="leftMinus" value="-" class="btn" />
+              <input type="button" id="leftPlus" value="+" class="btn btn-group" />
+            </div>
+          </div>
+          <div class="brekTime">
+            <h4>break time</h4>
+            <div id="brek">0 min</div>
+            <div class="buttons">
+              <input type="button" id="rightMinus" value="-" class="btn" />
+              <input type="button" id="rightPlus" value="+" class="btn" />
+            </div>
+          </div>
+        </div>
+
+        <div class="manip">
+          <input type="button" id="trigger" value="Start" class="btn manipBtn" />
+          <input type="button" id="reset" value="Reset" class="btn manipBtn" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
